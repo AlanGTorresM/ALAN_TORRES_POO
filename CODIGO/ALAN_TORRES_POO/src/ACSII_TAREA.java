@@ -7,10 +7,7 @@ public class ACSII_TAREA {
         System.out.println("Introduzca valores: ");
         ingreso= entrada.nextLine();
         for (int i=0; i<ingreso.length()-1;i++){
-            if ((int)ingreso.charAt(i+1)-(int)ingreso.charAt(i)==1){
-                valor=true;
-            }
-            else{
+            if ((int)ingreso.charAt(i+1)-(int)ingreso.charAt(i)!=1){
                 valor=false;
                 break;
             }
